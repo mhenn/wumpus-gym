@@ -9,6 +9,7 @@ class WumpusWorldEnv(gym.Env):
     metadata = {'render.modes' : ['human']}
     def __init__(self, size=4):
         self._world = Wumpus_World(size)
+        self.action_space = [0,1,2,3,4,5]
 
     def step(self, action):
         done = self._world.exec_action(action)

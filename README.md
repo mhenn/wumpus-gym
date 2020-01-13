@@ -20,3 +20,17 @@ import gym_wumpusworld
 
 env = gym.make('Wumpus-v0')
 ```
+
+
+The action space is containing the following actions:
+
+```
+   WALK = 0
+   TURNLEFT = 1
+   TURNRIGHT = 2
+   GRAB = 3 
+   SHOOT = 4
+   CLIMB = 5
+```
+
+
